@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.filterBtn {
+    border: 1px solid gray;
+    padding: 10px 20px;
+    border-radius: 40px;
+    box-shadow: 1px 1px rgb(154, 152, 152);
+
+}
+
+.loader {
+    width: 48px;
+    height: 48px;
+    border: 5px solid #FFF;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 30px;
+    animation: rotation 1s linear infinite;
+    }
+
+    @keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+    } 
+
+    .animate{
+        animation-name: shimmer;
+        background-image: linear-gradient(to right, #eceef3, #cfd5d7, #eff3f2, #dde1df, #c0c1bf);
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-direction: reverse;
+    }
+
+    @keyframes shimmer {
+
+        from {
+            background-position:1000px 0;
+        }
+        to{
+            background-position:-1000px 0;
+        }
+    }
